@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework JS 09-10</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<nav>
+    <ul class="main-menu">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li class="dropdown"><a href="#">Link 3</a>
+            <ul class="sub-menu">
+                <li><a href="#">Sub-link 1</a></li>
+                <li class="dropdown"><a href="#">Sub-link 2</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Sub-link 2.1</a></li>
+                        <li class="dropdown"><a href="#">Sub-link 2.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Sub-link 2.2.1</a></li>
+                                <li><a href="#">Sub-link 2.2.2</a></li>
+                                <li><a href="#">Sub-link 2.2.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sub-link 2.3</a></li>
+                        <li><a href="#">Sub-link 2.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sub-link 3</a></li>
+                <li><a href="#">Sub-link 4</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+    </ul>
+</nav>
+<h2>Carousel</h2>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel">
+        <ul>
+            <li><img src="img/31299-2.jpg" alt="Adelle"></li>
+            <li><img src="img/31299.jpg" alt="Adelle"></li>
+        </ul>
+    </div>
+    <div class="jcarousel-nav">
+        <a href="#" class="jcarousel-prev">&lt; Back</a>
+        <a href="#" class="jcarousel-next">Forward &gt;</a>
+    </div>
+</div>
+<h2>Custom Select Box</h2>
+<select data-placeholder="Choose a name..." name="name-selector" class="chosen-select">
+    <option value=""></option>
+    <option value="Ed">Ed</option>
+    <option value="Lisa">Lisa</option>
+    <option value="Alex">Alex</option>
+    <option value="Vicky">Vicky</option>
+    <option value="Sam">Sam</option>
+    <option value="John">John</option>
+</select>
+<h2>Custom checkbox</h2>
+<div class="js-checkbox">
+    <h3>with JavaScript</h3>
+    <span class="sprite sprite-unchecked"><input type="checkbox" id="isJS"></span>
+    <label for="isJS">I was created with Java Script!</label>
+    <span class="sprite sprite-unchecked"><input type="checkbox" id="isJS-2" checked></span>
+    <label for="isJS-2">Me too! I'm checked by default</label>
+</div>
+<div class="css-checkbox">
+    <h3>with CSS</h3>
+    <input type="checkbox" id="cb1"><label for="cb1">I was made with pure CSS</label>
+    <input type="checkbox" id="cb2" checked><label for="cb2">Me too! I'm checked by default</label>
+</div>
+</body>
+</html>
